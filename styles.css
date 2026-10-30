@@ -91,3 +91,16 @@ footer .brand{font-size:1.3rem}footer .wm-h,footer .wm-i{color:#fff}
 .install-note strong{color:var(--text)}
 .guide-links{display:flex;flex-wrap:wrap;gap:12px;margin:4px 0 14px}
 .guide-links{align-items:center}.guide-links a{font-weight:600;font-size:1.05rem;text-decoration:none;padding:8px 14px;border-radius:999px;background:var(--white);border:1.5px solid var(--primary)}.guide-links a:hover{background:var(--mint)}.guide-links span{color:var(--muted)}
+
+/* Updates page */
+.update-block{max-width:720px;margin:0 auto 40px;padding:28px;background:var(--white);border:1px solid rgba(15,118,110,.12);border-radius:var(--r);box-shadow:0 4px 20px -14px rgba(15,118,110,.35)}
+.alt .update-block{background:var(--surface)}
+.update-block h2{margin-top:12px;margin-bottom:10px;font-size:1.55rem}
+.update-block .lead{font-size:1.08rem;margin:0}
+.update-block .ticks{margin-top:16px}
+.timeline{list-style:none;padding:0;margin:0;border-left:3px solid var(--mint)}
+.timeline li{position:relative;padding:0 0 28px 22px}
+.timeline li:last-child{padding-bottom:0}
+.timeline li:before{content:"";position:absolute;left:-9px;top:6px;width:14px;height:14px;border-radius:50%;background:var(--primary);border:3px solid var(--mint)}
+.tl-date{display:block;font-weight:700;color:var(--primary);font-size:.95rem;letter-spacing:.02em;margin-bottom:4px}
+.timeline p{margin:0;color:var(--muted);font-size:1.05rem}
