@@ -104,3 +104,18 @@ footer .brand{font-size:1.3rem}footer .wm-h,footer .wm-i{color:#fff}
 .timeline li:before{content:"";position:absolute;left:-9px;top:6px;width:14px;height:14px;border-radius:50%;background:var(--primary);border:3px solid var(--mint)}
 .tl-date{display:block;font-weight:700;color:var(--primary);font-size:.95rem;letter-spacing:.02em;margin-bottom:4px}
 .timeline p{margin:0;color:var(--muted);font-size:1.05rem}
+
+/* Become a tester form */
+.tester-form{max-width:640px;margin:0 auto;background:var(--white);border:1px solid rgba(15,118,110,.12);border-radius:var(--r);padding:28px;box-shadow:0 4px 20px -14px rgba(15,118,110,.35)}
+.alt .tester-form{background:var(--surface)}
+.tester-field{margin-bottom:20px}
+.tester-field label{display:block;font-weight:600;margin-bottom:8px;color:var(--text)}
+.tester-field .req{font-weight:500;color:var(--muted);font-size:.9rem}
+.tester-field .opt{font-weight:500;color:var(--muted);font-size:.9rem}
+.tester-field input,.tester-field select{width:100%;font:inherit;font-size:1.05rem;padding:12px 14px;border-radius:12px;border:1.5px solid rgba(15,118,110,.25);background:var(--white);color:var(--text)}
+.tester-field input:focus,.tester-field select:focus{outline:2px solid var(--primary);outline-offset:1px;border-color:var(--primary)}
+.field-hint{margin:8px 0 0;color:var(--muted);font-size:.95rem}
+.field-error{margin:8px 0 0;color:#b91c1c;font-size:.95rem;font-weight:500}
+.privacy-note{background:var(--white);border:1px solid var(--mint);border-radius:14px;padding:14px 16px;margin:8px 0 16px;color:var(--muted);font-size:.98rem}
+.mailto-note{margin:0 0 18px;color:var(--muted);font-size:.98rem}
+.tester-form .btn{border:none;cursor:pointer;font:inherit}

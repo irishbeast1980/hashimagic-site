@@ -1,0 +1,148 @@
+<!DOCTYPE html><html lang="en-GB"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Become a tester: Hashimagic</title><meta name="description" content="Sign up to help test Hashimagic. Tell us your name, email and how much time you could give."><meta name="theme-color" content="#0F766E">
+<link rel="icon" href="img/favicon.svg"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&amp;display=swap"><link rel="stylesheet" href="styles.css"></head><body>
+<div class="notice"><strong>Not medical advice.</strong> Hashimagic is a self-tracking and information tool. It does not diagnose or treat any condition and is not a substitute for your doctor, specialist or pharmacist.</div>
+<header><div class="wrap nav"><a class="brand" href="index.html"><img src="img/hashimagic-mark.png" alt="Hashimagic logo"><span class="wm"><span class="wm-h">Hash</span><span class="wm-i">i</span><span class="wm-m">magic</span></span></a>
+<button class="menu-btn" aria-label="Menu" onclick="document.querySelector('.links').classList.toggle('open')">Menu</button>
+<ul class="links"><li><a href="index.html">Home</a></li><li><a href="features.html">Features</a></li><li><a href="about.html">About</a></li><li><a href="updates.html">Updates</a></li><li><a href="become-a-tester.html" class=on>Testers</a></li><li><a href="contact.html">Contact</a></li></ul></div></header>
+<main>
+<section class="page-hero"><div class="wrap" style="max-width:640px">
+<span class="pill">Testers</span>
+<h1>Become a <em>tester</em></h1>
+<p class="lead">We&rsquo;d love your help shaping Hashimagic. Fill in the form below. You do not need Hashimoto&rsquo;s to take part.</p>
+</div></section>
+
+<section class="alt" style="padding-top:0"><div class="wrap">
+<form id="tester-form" class="tester-form" novalidate
+  method="post"
+  action="">
+  <!--
+    FORM SERVICE (disabled for now). To switch from the mailto fallback:
+    1. Set window.HASHIMAGIC_FORM_ENDPOINT below (or the action attribute) to your endpoint URL
+       (for example a Google Apps Script web app, Formspree, Web3Forms, Basin or Forminit URL).
+    2. Set window.HASHIMAGIC_FORM_MODE = 'endpoint'.
+    Recommended later option for spreadsheet + email at no cost, with EU data storage: Tally
+    (create the form in Tally, enable Self email notifications and Google Sheets, then either
+    link this page to your Tally form or embed it). See the staging report for the full comparison.
+    Do not sign up for a service from this repo; Stephen configures it when ready.
+  -->
+  <div class="tester-field">
+    <label for="tester-name">Name <span class="req">(required)</span></label>
+    <input id="tester-name" name="name" type="text" autocomplete="given-name" required maxlength="120" placeholder="Your first name">
+    <p class="field-error" id="err-name" hidden>Please enter your name.</p>
+  </div>
+  <div class="tester-field">
+    <label for="tester-email">Email address <span class="req">(required)</span></label>
+    <input id="tester-email" name="email" type="email" autocomplete="email" required maxlength="200" placeholder="you@example.com">
+    <p class="field-error" id="err-email" hidden>Please enter a valid email address.</p>
+  </div>
+  <div class="tester-field">
+    <label for="tester-time">How much time could you give to testing? <span class="opt">(optional)</span></label>
+    <select id="tester-time" name="time">
+      <option value="">Prefer not to say</option>
+      <option value="About 10 minutes a day">About 10 minutes a day</option>
+      <option value="A few hours a week">A few hours a week</option>
+      <option value="Whenever I can">Whenever I can</option>
+      <option value="Not sure yet">Not sure yet</option>
+    </select>
+    <p class="field-hint">We suggest about 10 minutes a day for a few weeks.</p>
+  </div>
+  <p class="privacy-note">We&rsquo;ll only use your details to contact you about Hashimagic testing. We won&rsquo;t share them with anyone else.</p>
+  <p class="mailto-note" id="mailto-note">When you tap Send, your email app will open with a message ready for <a href="mailto:Stephen@hashimagic.co.uk">Stephen@hashimagic.co.uk</a>. Please send it from there so we receive your sign up.</p>
+  <p class="field-error" id="err-form" hidden></p>
+  <button type="submit" class="btn" id="tester-submit">Send sign up</button>
+</form>
+<div class="disclaimer" style="max-width:640px;margin-left:auto;margin-right:auto"><strong>Not medical advice.</strong> Hashimagic is a self-tracking and information tool. It does not diagnose or treat any condition and is not a substitute for your doctor, specialist or pharmacist.</div>
+</div></section>
+</main>
+<footer><div class="wrap"><div class="fgrid"><div><a class="brand" href="index.html"><img src="img/hashimagic-mark.png" alt=""><span class="wm"><span class="wm-h">Hash</span><span class="wm-i">i</span><span class="wm-m">magic</span></span></a>
+<p style="margin-top:12px;max-width:30em">A phone-first companion for people managing Hashimoto&rsquo;s and thyroid conditions day to day. Founded in the UK. Currently in development.</p></div>
+<div><strong style="color:#fff">Explore</strong><ul class="flinks"><li><a href="index.html">Home</a></li><li><a href="features.html">Features</a></li><li><a href="about.html">About</a></li><li><a href="updates.html">Updates</a></li><li><a href="become-a-tester.html">Testers</a></li><li><a href="contact.html">Contact</a></li></ul></div></div>
+<div class="fdisc"><strong>Important: not medical advice.</strong> Hashimagic is a self-tracking and general information tool. It does not provide medical advice, diagnosis or treatment, and it is not a substitute for your doctor, endocrinologist, pharmacist or local health service. Never change or stop medication without speaking to your clinician. If you are worried about your health, contact your doctor, local urgent care or, in an emergency, emergency services.</div>
+<p class="copy">&copy; 2026 Hashimagic. All rights reserved.</p></div></footer>
+<script>
+(function () {
+  // mailto = opens email app (works now). endpoint = POST to FORM_ENDPOINT (form service later).
+  window.HASHIMAGIC_FORM_MODE = 'mailto';
+  // Paste your form endpoint URL here when ready (Apps Script, Formspree, Web3Forms, Basin, Forminit, etc.).
+  // Leave empty while using mailto.
+  window.HASHIMAGIC_FORM_ENDPOINT = '';
+  // /* PLACEHOLDER example (disabled):
+  // window.HASHIMAGIC_FORM_MODE = 'endpoint';
+  // window.HASHIMAGIC_FORM_ENDPOINT = 'https://YOUR_FORM_SERVICE_OR_APPS_SCRIPT_URL';
+  // */
+
+  var form = document.getElementById('tester-form');
+  var nameEl = document.getElementById('tester-name');
+  var emailEl = document.getElementById('tester-email');
+  var timeEl = document.getElementById('tester-time');
+  var errName = document.getElementById('err-name');
+  var errEmail = document.getElementById('err-email');
+  var errForm = document.getElementById('err-form');
+  var mailtoNote = document.getElementById('mailto-note');
+
+  function isValidEmail(value) {
+    var v = (value || '').trim();
+    if (!v) return false;
+    // Friendly check: one @, local and domain parts, domain has a dot, no spaces.
+    var re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return re.test(v);
+  }
+
+  function show(el, on) {
+    if (!el) return;
+    el.hidden = !on;
+  }
+
+  function validate() {
+    var ok = true;
+    var nameOk = (nameEl.value || '').trim().length > 0;
+    show(errName, !nameOk);
+    if (!nameOk) ok = false;
+    var emailOk = isValidEmail(emailEl.value);
+    show(errEmail, !emailOk);
+    if (!emailOk) ok = false;
+    return ok;
+  }
+
+  // Keep mailto note visible only in mailto mode
+  if (window.HASHIMAGIC_FORM_MODE !== 'mailto' && mailtoNote) {
+    mailtoNote.hidden = true;
+  }
+
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    show(errForm, false);
+    if (!validate()) {
+      errForm.textContent = 'Please check the highlighted fields.';
+      show(errForm, true);
+      return;
+    }
+
+    var name = nameEl.value.trim();
+    var email = emailEl.value.trim();
+    var time = (timeEl.value || '').trim();
+    var mode = window.HASHIMAGIC_FORM_MODE || 'mailto';
+    var endpoint = (window.HASHIMAGIC_FORM_ENDPOINT || '').trim();
+
+    if (mode === 'endpoint' && endpoint) {
+      form.action = endpoint;
+      form.method = 'post';
+      // Native submit to the form service (after validation).
+      HTMLFormElement.prototype.submit.call(form);
+      return;
+    }
+
+    // Mailto fallback (current behaviour)
+    var body = 'Name: ' + name + '\nEmail: ' + email;
+    if (time) body += '\nTime for testing: ' + time;
+    body += '\n\n(Sent from the Hashimagic become a tester form)';
+    var mailto = 'mailto:stephen@hashimagic.co.uk'
+      + '?subject=' + encodeURIComponent('Hashimagic tester sign up')
+      + '&body=' + encodeURIComponent(body);
+    window.location.href = mailto;
+  });
+})();
+</script>
+</body></html>
