@@ -138,7 +138,7 @@ footer .brand{font-size:1.3rem;flex:0 1 auto;gap:10px}footer .brand img{width:40
 .tester-benefit{max-width:640px;margin:0 auto 22px;background:var(--white);border:1px solid var(--mint);border-left:5px solid var(--insight);border-radius:14px;padding:20px 22px;box-shadow:0 4px 20px -14px rgba(155,127,232,.35)}
 .alt .tester-benefit{background:#F7F4FD}
 .tester-benefit-title{font-size:1.35rem;line-height:1.25;letter-spacing:-.015em;margin:0 0 8px;color:var(--text)}
-.tester-benefit-text{margin:0;color:var(--muted);font-size:1.05rem;max-width:36em}
+.tester-benefit-text{margin:0;color:var(--muted);font-size:1.05rem;max-width:36em}.tester-benefit-text + .tester-benefit-text{margin-top:10px}
 /* Become a tester form */
 .tester-form{max-width:640px;margin:0 auto;background:var(--white);border:1px solid rgba(15,118,110,.12);border-radius:var(--r);padding:28px;box-shadow:0 4px 20px -14px rgba(15,118,110,.35)}
 .alt .tester-form{background:var(--surface)}
