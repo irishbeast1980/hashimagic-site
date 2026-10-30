@@ -77,3 +77,17 @@ footer .brand{font-size:1.3rem}footer .wm-h,footer .wm-i{color:#fff}
 .fdisc{margin-top:30px;padding:18px 20px;border-radius:14px;background:rgba(167,243,208,.08);border:1px solid rgba(167,243,208,.25);font-size:.92rem}
 .fdisc strong{color:#fff}
 .copy{margin-top:22px;font-size:.85rem;color:#94a3b8}
+
+/* Install guides */
+.guide-back{display:inline-block;margin:8px 0 4px;font-weight:600;text-decoration:none}
+.guide-back:hover{text-decoration:underline}
+.install-steps{display:flex;flex-direction:column;gap:36px;margin-top:28px;max-width:640px}
+.install-step{background:var(--white);border:1px solid rgba(15,118,110,.12);border-radius:var(--r);padding:22px;box-shadow:0 4px 20px -14px rgba(15,118,110,.35)}
+.install-step .step-num{display:inline-grid;place-items:center;width:36px;height:36px;border-radius:50%;background:var(--mint);color:var(--primary);font-weight:700;font-size:1.05rem;margin-bottom:12px}
+.install-step h2{font-size:1.35rem;margin:0 0 10px}
+.install-step p{color:var(--muted);font-size:1.05rem;margin:0 0 14px}
+.install-step img{width:100%;max-width:390px;margin:8px auto 0;border-radius:18px;border:1px solid rgba(15,118,110,.15);box-shadow:0 12px 28px -16px rgba(31,41,55,.35)}
+.install-note{background:var(--surface);border:1px solid var(--mint);border-radius:14px;padding:16px 18px;margin-top:18px;color:var(--muted);font-size:1rem}
+.install-note strong{color:var(--text)}
+.guide-links{display:flex;flex-wrap:wrap;gap:12px;margin:4px 0 14px}
+.guide-links{align-items:center}.guide-links a{font-weight:600;font-size:1.05rem;text-decoration:none;padding:8px 14px;border-radius:999px;background:var(--white);border:1.5px solid var(--primary)}.guide-links a:hover{background:var(--mint)}.guide-links span{color:var(--muted)}
