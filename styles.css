@@ -140,14 +140,13 @@ footer .brand{font-size:1.3rem;flex:0 1 auto;gap:10px}footer .brand img{width:40
 .tester-benefit-title{font-size:1.35rem;line-height:1.25;letter-spacing:-.015em;margin:0 0 8px;color:var(--text)}
 .tester-benefit-text{margin:0;color:var(--muted);font-size:1.05rem;max-width:36em}.tester-benefit-text + .tester-benefit-text{margin-top:10px}
 
-/* Home tester callout (compact) */
-.home-tester{padding:28px 0 8px}
+/* Home tester callout (compact, under How Hashimagic helps boxes) */
+.home-tester{margin-top:28px}
 .home-tester-card{max-width:720px;margin:0 auto;padding:18px 20px}
 .home-tester .tester-benefit-title{font-size:1.2rem;margin-bottom:6px}
 .home-tester .tester-benefit-text{font-size:1rem}
 .home-tester-cta{margin:14px 0 0}
 .home-tester-cta .btn{padding:12px 22px}
-@media(max-width:900px){.home-tester{padding:20px 0 0}}
 /* Become a tester form */
 .tester-form{max-width:640px;margin:0 auto;background:var(--white);border:1px solid rgba(15,118,110,.12);border-radius:var(--r);padding:28px;box-shadow:0 4px 20px -14px rgba(15,118,110,.35)}
 .alt .tester-form{background:var(--surface)}
